@@ -11,10 +11,12 @@ const aboutDetail = forwardRef((props, ref) => {
       <div className="home-about">
         <h1 className="home-title">안녕하세요.</h1>
         <div className="home-text">
-          <p></p>
+          <p>전북대학교 IT정보공학과 졸업을 앞둔, </p>
           <p>
-            <span className="highlight">이승재</span> 입니다.
+            예비 개발자 <span className="highlight">이승재</span> 입니다.
           </p>
+          <br />
+          <p>직무 부트캠프로 많이 배워가고 싶습니다 🙌</p>
         </div>
       </div>
     </div>

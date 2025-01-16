@@ -31,12 +31,12 @@
 }
 
 .menu-item {
-  margin: 0 1rem; /* 반응형 마진 */
+  margin: 0 1rem;
 }
 
 .menu-item > a {
   color: black;
-  font-size: clamp(0.75rem, 2vw, 1.25rem); /* 최소 1rem, 최대 1.5rem */
+  font-size: clamp(0.75rem, 2vw, 1.25rem);
   cursor: pointer;
   text-decoration: none;
 }
