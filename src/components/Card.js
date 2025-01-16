@@ -1,4 +1,4 @@
-import "../style/components/Card";
+import "../style/components/Card.css";
 const Card = ({ className, children }) => {
   return <div className={`card ${className}`}>{children}</div>;
 };

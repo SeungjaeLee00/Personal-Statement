@@ -1,10 +1,24 @@
 .App {
-  text-align: center;
+  background: linear-gradient(to bottom, #ffecdb, #ffab91);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* 컴포넌트가 화면 위에서부터 시작하도록 */
+  align-items: center;
+  padding: 3rem;
+  padding-top: calc(3rem + 4rem);
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (prefers-reduced-motion: no-preference) {

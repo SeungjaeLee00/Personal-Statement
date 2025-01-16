@@ -1,0 +1,74 @@
+.archiving {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 30px;
+  margin: 40px 0;
+
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+.archiving-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: row; /* 기본적으로 가로 정렬 */
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap; /* 줄 바꿈 없이 가로로 정렬 */
+}
+
+/* 기본 스타일 */
+.github-card,
+.blog-card {
+  width: 100%;
+  max-width: 400px; /* 기본 카드 너비 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 10px;
+  white-space: nowrap;
+}
+
+/* 큰 화면에서 카드 크기 키우기 */
+@media (min-width: 1200px) {
+  .github-card,
+  .blog-card {
+    max-width: 600px !important; /* 카드 너비를 더 크게 확장 */
+  }
+
+  .blog-card p {
+    white-space: nowrap; /* 글씨를 한 줄로 유지 */
+  }
+}
+
+/* 작은 화면에서 세로 정렬로 변경 */
+@media (max-width: 768px) {
+  .card-wrapper {
+    flex-direction: column !important; /* 작은 화면에서는 세로 정렬 */
+  }
+
+  .archiving-title {
+    font-size: 1.8rem; /* 제목 글씨 크기 줄임 */
+    margin-bottom: 20px; /* 아래쪽 여백 줄임 */
+  }
+
+  .github-card,
+  .blog-card {
+    max-width: 100%; /* 카드 너비를 100%로 확장 */
+  }
+}

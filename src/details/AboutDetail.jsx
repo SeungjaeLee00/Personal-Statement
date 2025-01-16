@@ -1,12 +1,12 @@
 import React, { forwardRef } from "react";
 import "../style/details/AboutDetail.css";
-// import myphoto from "../img/potfoilo.png";
+import myphoto from "../assets/profile.png";
 
-const aboutDetail = forwardRef((props, ref) => {
+const aboutDetail = forwardRef((pros, ref) => {
   return (
     <div className="home" ref={ref}>
       <div className="home-myPhoto">
-        {/* <img src={myphoto} alt="My Photo" /> */}
+        <img src={myphoto} />
       </div>
       <div className="home-about">
         <h1 className="home-title">안녕하세요.</h1>
