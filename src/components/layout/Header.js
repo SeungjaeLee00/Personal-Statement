@@ -18,9 +18,6 @@ function Header() {
             <a href="#Skills">Tech Skills</a>
           </div>
           <div className="menu-item">
-            <a href="#Project">Project</a>
-          </div>
-          <div className="menu-item">
             <a href="#Contact">Contact</a>
           </div>
         </div>
