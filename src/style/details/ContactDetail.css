@@ -1,0 +1,127 @@
+.Contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 30px;
+  margin: 40px 0;
+  width: 100%;
+  max-width: 1200px;
+  max-height: 100vh; /* 화면 높이를 초과하지 않도록 */
+  box-sizing: border-box;
+  overflow-y: auto; /* 세로 스크롤 허용 */
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-card {
+  width: 400px;
+}
+
+.contents {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contents h3 {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+}
+
+.contents input,
+.contents textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.contents textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.send-btn {
+  text-align: center;
+}
+
+.send-btn button {
+  background-color: #ffab91;
+  color: white;
+  width: 200px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-btn button:hover {
+  background-color: #0056b3;
+}
+
+.email-link {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .Contact {
+    padding: 10px; /* 여백 줄임 */
+  }
+
+  .contact-title {
+    font-size: 1.8rem; /* 제목 글씨 크기 줄임 */
+    margin-bottom: 20px; /* 아래쪽 여백 줄임 */
+  }
+
+  .contact-card {
+    width: 100%; /* 카드 너비를 화면 전체로 설정 */
+    max-width: 200px; /* 카드 최대 너비 줄임 */
+  }
+
+  .contents {
+    max-width: 100%; /* 콘텐츠 너비를 화면 전체로 설정 */
+    padding: 10px; /* 여백 줄임 */
+  }
+
+  .contents h3 {
+    font-size: 14px; /* 제목 글씨 크기 줄임 */
+    margin-bottom: 6px; /* 아래쪽 여백 줄임 */
+  }
+
+  .contents input,
+  .contents textarea {
+    max-width: 100%; /* 입력 필드 및 텍스트 영역 너비를 화면 전체로 설정 */
+    font-size: 12px; /* 글씨 크기 줄임 */
+    padding: 8px; /* 패딩 줄임 */
+    margin-bottom: 12px; /* 아래쪽 여백 줄임 */
+  }
+
+  .contents textarea {
+    height: 80px; /* 텍스트 영역 높이 줄임 */
+  }
+
+  .send-btn button {
+    width: 100px; /* 버튼 너비 줄임 */
+    font-size: 14px; /* 글씨 크기 줄임 */
+    padding: 8px 16px; /* 패딩 줄임 */
+  }
+}

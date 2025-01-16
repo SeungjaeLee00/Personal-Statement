@@ -24,3 +24,5 @@ yarn-error.log*
 
 # img
 src/assets/*.png
+
+.env
