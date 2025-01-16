@@ -1,0 +1,70 @@
+.home {
+  display: flex;
+  justify-content: center;
+  padding: 80px 30px;
+  margin: 40px 0;
+}
+
+.home-myPhoto {
+  margin-right: 50px;
+}
+
+.home-myPhoto img {
+  width: 400px;
+  height: auto;
+  border-radius: 20%;
+}
+
+.home-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-title {
+  margin-left: 30px;
+  font-size: 1.7rem;
+  color: #333;
+}
+
+.home-text {
+  margin-left: 30px;
+  font-size: 1.7rem;
+  color: #666;
+}
+
+.home-text .highlight {
+  font-weight: bold;
+  color: #333;
+  font-size: 3.4rem;
+}
+
+/* 미디어 쿼리: 화면 너비가 768px 이하일 때 */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-myPhoto {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .home-myPhoto img {
+    width: 300px; /* 화면 너비가 400px 이하일 때 이미지 크기 조정 */
+  }
+
+  .home-title {
+    font-size: 1.2rem;
+  }
+
+  .home-text {
+    font-size: 1.2rem;
+  }
+
+  .home-text .highlight {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,42 @@
+.menu-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: beige;
+  z-index: 1000;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+}
+
+.menu-contents {
+  width: 100%;
+  display: flex;
+  padding: 0.6rem 1rem;
+  box-sizing: border-box;
+  justify-content: space-around;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu-title > a {
+  color: black;
+  font-size: clamp(1rem, 2.5vw, 1.75rem);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.menu-item {
+  margin: 0 1rem; /* 반응형 마진 */
+}
+
+.menu-item > a {
+  color: black;
+  font-size: clamp(0.75rem, 2vw, 1.25rem); /* 최소 1rem, 최대 1.5rem */
+  cursor: pointer;
+  text-decoration: none;
+}

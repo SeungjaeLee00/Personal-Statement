@@ -1,0 +1,26 @@
+.card {
+  background-color: white; /* 카드의 배경색을 흰색으로 설정 */
+  border-radius: 8px; /* 카드 모서리를 약간 둥글게 설정 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 카드에 약간의 그림자 추가 */
+  padding: 16px; /* 카드 내부의 패딩을 설정 */
+  margin: 16px 0; /* 카드 상하단에 여백을 설정 */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* 카드에 마우스를 올렸을 때 부드러운 전환 효과 추가 */
+}
+
+.card:hover {
+  transform: translateY(
+    -4px
+  ); /* 카드에 마우스를 올렸을 때 약간 올라가게 설정 */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* 카드에 마우스를 올렸을 때 그림자가 더 진해지도록 설정 */
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
